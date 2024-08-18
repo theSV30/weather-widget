@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Weather | SV30</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Current Weather Section -->
+            <div class="col-md-4">
+                <section class="current-weather">
+                    <h1 class="city-title" id="displayed-city">Mumbai</h1>
+                    <span class="current-time">9:43am | 13 Aug | Tuesday</span>
+                    <div class="weather-info">
+                      <img src="https://img.icons8.com/color-glass/42/000000/cloud.png" alt="Cloudy"/>
+                      <div>
+                        <h1 class="temp-title" id="current-temperature">29°</h1>
+                        <h3 class="weather-status">Cloudy</h3>
+                      </div>
+                    </div>
+                  </section>
+            </div>
+
+            <!-- Container 1 Section -->
+            <div class="col-md-8">
+                <section class="container-1">
+                    <div class="row">
+                        <form class="col" id="search-form">
+                            <input type="text" id="search-input" placeholder="Search City" class="search-form">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="row mb-4">
+                        <!-- Side Information (Humidity, Wind, etc.) -->
+                        <div class="col">
+                            <div class="weather-details">
+                                <div class="weather-item">
+                                    <span class="weather-label">Humidity:</span>
+                                    <span id="humidity" class="weather-value"></span>
+                                </div>
+                                <div class="weather-item">
+                                    <span class="weather-label">Wind:</span>
+                                    <span id="wind" class="weather-value"></span>
+                                </div>
+                                <div class="weather-item">
+                                    <span class="weather-label">Visibility:</span>
+                                    <span id="visibility" class="weather-value"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week Forecast -->
+                    <div class="row week-forecast">
+                        <div class="col-md-2 text-center">
+                            <h4>Weds</h4>
+                            <img src="https://img.icons8.com/color-glass/42/000000/cloud.png" alt="Cloudy"/>
+                            <p class="weather">Cloudy</p>
+                            <span>26°</span>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h4>Thur</h4>
+                            <img src="https://img.icons8.com/color-glass/42/000000/sun.png" alt="Sunny"/>
+                            <p class="weather">Sunny</p>
+                            <span>27°</span>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h4>Fri</h4>
+                            <img src="https://img.icons8.com/color-glass/42/000000/wind.png" alt="Windy"/>
+                            <p class="weather">Windy</p>
+                            <span>26°</span>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h4>Sat</h4>
+                            <img src="https://img.icons8.com/color-glass/42/000000/rain.png" alt="Rain"/>
+                            <p class="weather">Rain</p>
+                            <span>25°</span>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h4>Sun</h4>
+                            <img src="https://img.icons8.com/color-glass/42/000000/rain.png" alt="Rain"/>
+                            <p class="weather">Rain</p>
+                            <span>27°</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
