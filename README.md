@@ -1,4 +1,4 @@
-#Weather Widget
+Weather Widget
 A dynamic and customizable weather widget that displays real-time weather data and a 5-day forecast using the OpenWeatherMap API. Ideal for integrating into web projects to provide accurate and location-specific weather information.
 
 ##Features
@@ -9,7 +9,7 @@ Demo
 <img width="1308" alt="image" src="https://github.com/user-attachments/assets/1d8144cb-f7f6-406c-9159-6bbd3f3064fa">
 
 
-##Installation
+Installation
 1.Clone the repository:
 git clone https://github.com/yourusername/weather-widget.git
 cd weather-widget
@@ -26,7 +26,7 @@ cd weather-widget
 5.Deploy the widget:
   Add the widget to your website by including the HTML, CSS, and JavaScript files.
 
-##Usage
+Usage
 1.Search for a City:
   Use the search bar to enter any city name, and the widget will update with the current weather and forecast for that location.
 
